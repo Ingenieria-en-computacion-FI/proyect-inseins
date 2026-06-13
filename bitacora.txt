@@ -1,0 +1,12 @@
+Lunes 8 de junio:
+​Objetivo: Análisis estructural y preparación del entorno.
+​Procedimiento: Realizamos una comparativa entre el código base y nuestra estructura. Identificamos como elementos principales: la gestión de la matriz global, los prototipos de funciones para el plan modular y el ciclo principal (main). Con ayuda de Gemini, desglosamos las bibliotecas (SDL.h, stdio.h, stdlib.h, time.h) y funciones críticas, estableciendo un glosario técnico. Documentamos nuestra ruta de trabajo mediante un diagrama de flujo inicial para visualizar el ciclo de vida del juego.
+​Martes 9 de junio:
+​Objetivo: Implementación y configuración del entorno gráfico con SDL2.
+​Procedimiento: Configuramos la ventana y el SDL_Renderer. Durante este proceso, surgieron dudas técnicas sobre la inicialización de la ventana y el manejo de eventos; consultamos a Gemini para optimizar el SDL_PollEvent. Refinamos la lógica mediante un diagrama de flujo que explicaba cómo el programa pasa de capturar una tecla a renderizar un cambio en pantalla.
+​Miércoles 10 de junio:
+​Objetivo: Desarrollo de la IA del fantasma.
+​Procedimiento: Implementamos moverFantasma() usando lógica de persecución y azar (probabilidad 70/30). Este día fue clave para la depuración (debugging): cada error de compilación (especialmente en los punteros y colisiones) fue analizado y resuelto mediante una consulta a Gemini, lo que nos permitió entender el "porqué" del error y no solo corregirlo.
+​Jueves 11 de junio:
+​Objetivo: Edición del mapa y persistencia de datos.
+​Procedimiento: Diseñamos y editamos nuestro mapa de un nivel único en mapa.txt. Ajustamos el bucle anidado de cargarMapa() para asegurar que la posición inicial de Pac-Man y el fantasma fuera dinámica. Finalizamos configurando el sistema de puntajes en puntajes.txt. Cerramos el proyecto validando que el flujo de datos fuera coherente con el mapa diseñado
